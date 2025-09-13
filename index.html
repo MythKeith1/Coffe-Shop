@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Urban Taste Restaurant</title>
+  <link rel="stylesheet" href="restaurant.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="logo">Urban<span>Taste</span></div>
+    <nav class="nav" id="navMenu">
+      <a href="#hero">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Experience <span>Urban Dining</span></h1>
+      <p class="hero-subtitle">Where flavor meets style</p>
+      <a href="#menu" class="btn cta-glow">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-grid">
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
+        <h3>Gourmet Pizza</h3>
+        <p>Wood-fired with fresh toppings</p>
+      </div>
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?burger" alt="Burger">
+        <h3>Signature Burgers</h3>
+        <p>Juicy and loaded with flavor</p>
+      </div>
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Authentic sauces and fresh herbs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content">
+      <img src="https://source.unsplash.com/500x400/?restaurant,interior" alt="Restaurant Interior">
+      <p>At Urban Taste, we combine modern aesthetics with unforgettable flavors. Our chefs craft each dish with passion, bringing a unique twist to traditional favorites. Whether it's a casual night out or a special occasion, we’re here to make it memorable.</p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="reviews-section">
+    <h2 class="section-title">What Our Guests Say</h2>
+    <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="review active">"Best pizza in town! The vibe is amazing." – Sarah</div>
+      <div class="review">"Stylish, cozy, and the pasta is to die for." – James</div>
+      <div class="review">"Loved the atmosphere and the food was top-notch." – Maria</div>
+    </div>
+    <div class="carousel-controls">
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        <input type="text" name="name" required placeholder="Your Name" />
+      </label>
+      <label>
+        <input type="email" name="email" required placeholder="Your Email" />
+      </label>
+      <label>
+        <textarea name="message" rows="4" required placeholder="Your Message"></textarea>
+      </label>
+      <button type="submit" class="btn cta-glow">Send Message</button>
+      <div id="formMessage" class="form-message"></div>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Urban Taste. Designed with passion.</p>
+  </footer>
+
+  <script src="restaurant.js"></script>
+</body>
+</html>
